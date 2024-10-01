@@ -1,0 +1,72 @@
+.header {
+  background-color: var(--background-black);
+  color: var(--text-white);
+  font-size: 30px;
+  padding: 4px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.head_logo_rotate:hover {
+  animation: rotateTwice 2s ease-in-out;
+}
+
+@keyframes rotateTwice {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.head_logo_img {
+  width: 150px; /* 원하는 너비 설정 */
+  height: 150px; /* 원하는 높이 설정 (너비와 같게 설정하여 원형 유지) */
+  border-radius: 50%; /* 완전한 원형으로 만들기 */
+  object-fit: cover; /* 이미지 비율 유지하면서 크기 조정 */
+  display: block; /* 부모 요소의 margin이 영향을 미치지 않도록 설정 */
+}
+
+ul {
+  display: flex;
+  gap: 100px;
+}
+
+.header_login {
+  display: flex;
+  font-size: 20px;
+}
+
+.button_home {
+  cursor: pointer;
+}
+
+.button_home a {
+  color: #fff; /* 원하는 텍스트 색상 */
+  text-decoration: none; /* 밑줄 제거 (원하는 경우) */
+}
+
+/* .button_home a:hover {
+  color: #fff; 마우스를 올렸을 때 색상
+} */
+
+.header_login {
+  background-color: #4caf50; /* 버튼 배경색 */
+  color: white; /* 버튼 글자색 */
+  padding: 15px 32px; /* 상하 15px, 좌우 32px 여백 */
+  font-size: 16px; /* 글자 크기 */
+  border: none; /* 테두리 제거 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  cursor: pointer; /* 포인터 커서 */
+}
+
+.header_login:hover {
+  background-color: #6245a0; /*호버 시 배경색*/
+}

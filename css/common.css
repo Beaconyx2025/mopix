@@ -1,0 +1,20 @@
+:root {
+  --background-black: #000;
+  --text-white: #fff;
+}
+
+/*.typography-title {
+    display: flex;
+}*/
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
