@@ -1,3 +1,19 @@
+.main_body {
+  margin: 0, auto;
+  padding: 0;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.body_center {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   background-color: var(--background-black);
   color: var(--text-white);
@@ -6,7 +22,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  /* position: fixed;
+  margin-top: 0px; */
   width: 100%;
 }
 
@@ -44,7 +61,7 @@
   font-size: 20px;
 }
 
-.button_home {
+.head_home {
   cursor: pointer;
 }
 
@@ -61,7 +78,7 @@
   background-color: #4caf50; /* 버튼 배경색 */
   color: var(--text-white); /* 버튼 글자색 */
   padding: 15px 32px; /* 상하 15px, 좌우 32px 여백 */
-  font-size: 16px; /* 글자 크기 */
+  font-size: 20px; /* 글자 크기 */
   border: none; /* 테두리 제거 */
   border-radius: 4px; /* 모서리 둥글게 */
   cursor: pointer; /* 포인터 커서 */
@@ -74,23 +91,108 @@
 .main_content {
   display: flex;
   margin: 0 auto; /*Center the layout horizontally*/
-  margin-top: 0px; /*Space between header and content*/
+  margin-top: 0px; /*Space between header and content */
   box-sizing: border-box;
+  width: 100%;
 }
 .main_aside {
-  /* width: 30%; 30% of 1300px = 390px */
-  background-color: var(--background-black);
+  width: 24%;
+  background-color: #333333;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; /* Ensure text color is white */
-  margin-top: 150px
+  color: #6245a0; /* Ensure text color is white */
+}
 
+.main_aside_ul {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  gap: 50px; /* Space between items */
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.main_aside_ul_button {
+  display: flex; /* Use flexbox */
+  justify-content: center;
+  align-items: center;
+  list-style-type: none; /* Remove default list styling */
+  padding: 10px; /* Add some padding inside the box */
+  margin: 0; /* Remove default margin */
+  border: 2px solid #000; /* Add a solid border around the box */
+  border-radius: 8px; /* Optional: Rounded corners */
+  font-size: 20px; /* Set font size to 20px */
+  width: 300px; /* Set a specific width for the box (optional) */
+  background-color: aqua; /* Optional: Background color for the box */
+  cursor: pointer;
+}
+
+.main_aside_ul_button:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
 
 .main_section {
   width: 70%; /* 70% of 1300px = 910px */
+  margin: 0 auto;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: white;
   color: #333;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--grid-item-width), 1fr)
+  ); /* Responsive columns */
+  gap: 20px; /* Space between grid items */
+  justify-content: center; /* Center the grid in the container */
+  justify-items: center; /* Center the grid items inside the grid */
+}
+
+.grid-item {
+  width: var(--grid-item-width);
+  height: var(--grid-item-height);
+  display: flex; /* Use flex to center image */
+  flex-direction: column;
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
+  overflow: hidden; /* Hide overflow for images */
+  border: 2px solid #ddd; /* Optional border */
+  /* border-radius: 8px; Optional rounded corners */
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
+}
+
+.grid-item:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.grid-item img {
+  max-width: 100%; /* Make image responsive */
+  max-height: auto; /* Make image responsive */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.footer {
+  background-color: var(--background-black);
+  color: var(--text-white);
+  font-size: 20px;
+  padding: 4px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: fix-start;
+  /* position: fixed; */
+  width: 100%;
+}
+
+.footer p {
+  max-width: 90%; /* Restrict width of the paragraph */
+  line-height: 1.6; /* Adjust line spacing for readability */
+}
+
+.footer .copyright {
+  align-self: flex-end; /* Align copyright to the top */
+  font-size: 20px; /* Slightly smaller text for copyright */
+  white-space: nowrap; /* Prevent copyright text from wrapping */
 }
