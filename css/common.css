@@ -1,6 +1,10 @@
 :root {
   --background-black: #000;
   --text-white: #fff;
+  --Secondary-Color: Gray (#333333);
+  --Accent-Color: Cyan (#00bfff);
+  --grid-item-width: 400px; /* Width of each grid item */
+  --grid-item-height: 280px; /* Height of each grid item */
 }
 
 /*.typography-title {
