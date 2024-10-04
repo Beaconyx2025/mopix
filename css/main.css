@@ -1,5 +1,5 @@
 .main_body {
-  margin: 0, auto;
+  margin: 0;
   padding: 0;
   border: 1px solid #000;
   box-sizing: border-box;
@@ -136,7 +136,7 @@
 }
 
 .main_section {
-  width: 70%; /* 70% of 1300px = 910px */
+  width: 70%; /* 70% of 1920px = 1345px */
   margin: 0 auto;
   padding: 20px;
   background-color: white;
