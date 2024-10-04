@@ -1,5 +1,5 @@
 .main_body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border: 1px solid #000;
   box-sizing: border-box;
@@ -76,7 +76,7 @@
   color: #fff; 마우스를 올렸을 때 색상
 } */
 
-.header_login {
+.header_Login {
   background-color: #4caf50; /* 버튼 배경색 */
   color: var(--text-white); /* 버튼 글자색 */
   padding: 15px 32px; /* 상하 15px, 좌우 32px 여백 */
@@ -86,7 +86,7 @@
   cursor: pointer; /* 포인터 커서 */
 }
 
-.header_login:hover {
+.header_Login:hover {
   background-color: #6245a0; /*호버 시 배경색*/
 }
 
@@ -98,7 +98,7 @@
   width: 100%;
 }
 .main_aside {
-  width: 24%;
+  width: 21%;
   background-color: #333333;
   padding: 20px;
   display: flex;
@@ -136,7 +136,7 @@
 }
 
 .main_section {
-  width: 70%; /* 70% of 1920px = 1345px */
+  width: 79%; /* 70% of 1920px = 1345px */
   margin: 0 auto;
   padding: 20px;
   background-color: white;

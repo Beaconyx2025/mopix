@@ -1,5 +1,5 @@
 .main_section_contact {
-  width: 70%;
+  width: 79%;
   margin: 0;
   padding: 20px;
   background-image: url(../assets/Hand.png);
@@ -13,7 +13,7 @@
   justify-content: center;
   width: 100%;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #d6e7f0;
 }
 
 .contact-table table {
