@@ -24,8 +24,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* position: fixed;
-  margin-top: 0px; */
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -92,8 +92,7 @@
 
 .main_content {
   display: flex;
-  margin: 0 auto; /*Center the layout horizontally*/
-  margin-top: 0px; /*Space between header and content */
+  margin: 158px 0 0 0; /*Center the layout horizontally*/
   box-sizing: border-box;
   width: 100%;
 }
